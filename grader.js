@@ -26,16 +26,16 @@ var cheerioHtmlFile = function(htmlFile){
 };
 
 var loadsChecks = function(checksFile){
-    reurn JSON.parse(fs.readFileSync(checksFile));
+    return JSON.parse(fs.readFileSync(checksFile));
 };
 
 var checkHtmlFile = function(htmlFile, checksFile){
     $ = cheerioHtmlFile(htmlFile);
-    var checks = loadChecks(checksFile).sort(); 
+    var checks = loadsChecks(checksFile).sort(); 
     var out = {};
     for(var ii in checks){
 	var present = $(checks[ii]).length > 0;
-	out[ii] = present;
+	out[checks[ii]] = present;
     } 
     return out;
 };
