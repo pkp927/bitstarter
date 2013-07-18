@@ -3,11 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+
     <metacharset="utf-8">
     <title>My First Bitstarter</title>
     <style type="text/css">
       body {
-        padding-top: 20px;
+        padding-top: 60px;
         padding-bottom: 40px;
       }
       .container{
@@ -37,26 +41,37 @@
     </style>
   </head>  
   <body>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+	<div class="container">
+	  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="brand" href="#">BitStarter</a>
+	  <div class="nav-collapse collapse">
+	    <ul class="nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
     <div class="container">
-      <div class="row navigation">
-	<div class="span2 logo">
-	  Logo
-	</div>
-	<div class="span6 blank">
-	  BLank
-	</div>
-	<div class="span4 about">
-	  About
+      <div class="row-fluid heading">
+	<div class="span12">
+	  <h1>Product</h1>
 	</div>
       </div>
-      <div class="row heading">
+      <div class="row-fluid subheading">
 	<div class="span12">
-	  <h1>Bitstarter Title</h1>
-	</div>
-      </div>
-      <div class="row subheading">
-	<div class="span12">
-	  <p class="lead">This is my first bitstarter project.</p> 
+	  <p class="lead">One sentence description.</p> 
 	</div> 
       </div>
       <div class="row pitch">
